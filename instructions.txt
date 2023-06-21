@@ -1,0 +1,31 @@
+Using the UML Diagram above and the specifications below, implement the class Employee.
+
+1. The empty-argument constructor should set all Strings to "" and salary to 8.25, and hoursWorked to 0.0.
+
+2. The preferred constructor should call the setters for all instance variables except hoursWorked. Just set that directly without calling a setter. Tests 01 and 02 should pass.
+
+3. Modify the setter for salary so that the salary must be 8.25 or more. If it is not, then it should be set to 8.25 (this is a bounds check) Test 03 should pass.
+
+4. Your toString method should provide the following output: Employee<SPC>[firstName=John,<SPC>lastName=Doe,<SPC>position=The Boss,<SPC>salary=20.0,<SPC>hoursWorked=0.0] Test 04 should pass.
+
+5. Implement the work method as specified by the UML diagram. This method should bounds check the hours. If it less than zero, it should NOT accumulate hours into the hoursWorked method. Tests 05 and 06 should pass.
+
+6. Implement the clearHoursWorked method. It should reset hoursWorked to 0.0. Test 07 should pass.
+
+7. Implement the showCurrentPay method. It should calculate the pay by multiplying the salary by the hours worked. UNLESS, the person works over 40 hours. Then it should calculate any hours over 40 as 1.5 the salary time those hours worked. Tests 08 and 09 should pass.
+
+8. Impelment the displayPayCheck method. It should return a String with the following output: (you'll need to uncomment all the code in Application.java before you run this test) Test 10 should pass.
+
+======JOHN DOE======
+
+Hours Worked: 27.0
+
+Salary: 20.0/hr
+
+Total Pay: 540.0
+
+
+
+toString() format:
+
+Employee<SPC>[firstName=John,<SPC>lastName=Doe,<SPC>position=The Boss,<SPC>salary=20.0,<SPC>hoursWorked=0.0]
