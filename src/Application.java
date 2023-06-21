@@ -4,7 +4,7 @@ public class Application {
         Employee employee1;
 
         employee1 = new Employee();
-        employee1.setFirstName("Travis");
+        employee1.setFirstName("Lawrence");
         employee1.setLastName("Caudle");
         employee1.setPosition("The Boss");
         employee1.work(27);
